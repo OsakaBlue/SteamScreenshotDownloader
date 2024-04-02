@@ -8,7 +8,7 @@ ua
 
 2. Запустіть DownloadHTML.py
 
-3. Вставте посилання на знімок екрана Steam і натисніть OK.
+3. Вставте посилання на сторінку профілю зі знімками екрану Steam і натисніть OK.
 
 4. Дочекайтеся встановлення бібліотек.
 
@@ -25,7 +25,7 @@ It downloads screenshots from steam profile. However, you need python
 
 2. Run DownloadHTML.py
 
-3. Paste the Steam screenshot link and click OK.
+3. Paste the Steam screenshot page link and click OK.
 
 4. Wait for the libraries to be installed.
 
