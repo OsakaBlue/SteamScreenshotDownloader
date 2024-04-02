@@ -2,7 +2,7 @@
 It downloads it. Kind of. You need python though.
 
 
-1. Install Python.
+1. Download Python from official website and install it.
 
 2. Run DownloadHTML.py
 
