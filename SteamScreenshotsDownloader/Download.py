@@ -1,24 +1,7 @@
+# Завантажуємо бібліотеки у поточному середовищі
 import tkinter as tk
 from tkinter import messagebox
-import subprocess
 import os
-import sys
-import venv
-
-print("Creating venv and getting python libraries... Wait...")
-print("\n")
-
-# Виконуємо команди для створення віртуального середовища
-venv.create(".venv", with_pip=True, prompt='')
-
-# Передаємо шлях до Python-інтерпретатора віртуального середовища
-python_interpreter = os.path.join(os.getcwd(), ".venv", "Scripts", "python")
-
-# Встановлюємо необхідні пакети у віртуальне середовище
-subprocess.run([python_interpreter, "-m", "pip", "install", "--upgrade", "pip"])
-subprocess.run([python_interpreter, "-m", "pip", "install", "requests", "beautifulsoup4", "selenium"])
-
-# Імпортуємо бібліотеки після встановлення
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
