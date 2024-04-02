@@ -2,28 +2,28 @@ SteamScreenshotDownloader
 
 ua
 
-Завантажує скріншоти з профілю steam. Однак вам потрібен python
+Завантажує скріншоти з профілю steam. 
 
-1. Встановіть Python.
+1. Скачай Python з офіційного сайту і встанови його.
 
-2. Запустіть DownloadHTML.py
+2. Запусти Download.py
 
-3. Вставте посилання на сторінку профілю зі знімками екрану Steam і натисніть OK.
+3. Встав посилання на сторінку профілю зі скріншотами зі Steam і натисни OK.
 
-4. Дочекайтеся встановлення бібліотек.
+4. Дочекайся встановлення бібліотек.
 
-5. Зачекайте, це займе деякий час.
+5. Зачекай, це займе деякий час.
 
 P.S. Написано chatGPT
 
 
 en
 
-It downloads screenshots from steam profile. However, you need python
+It downloads it. Kind of. You need python though.
 
-1. Install Python.
+1. Download Python from official website and install it.
 
-2. Run DownloadHTML.py
+2. Run Download.py
 
 3. Paste the Steam screenshot page link and click OK.
 
