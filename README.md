@@ -6,7 +6,7 @@ It downloads it. Kind of. You need python though.
 
 2. Run DownloadHTML.py
 
-3. Paste the Steam screenshot link and click OK.
+3. Paste the Steam screenshot page link and click OK.
 
 4. Wait for the libraries to be installed.
 
