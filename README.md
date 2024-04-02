@@ -13,3 +13,6 @@ It downloads it. Kind of. You need python though.
 5. Wait, it will take some time.
 
 P.S. Written by chatGPT
+
+
+DOWNLOAD latest version - https://github.com/OsakaBlue/SteamScreenshotDownloader/releases/tag/downloader
