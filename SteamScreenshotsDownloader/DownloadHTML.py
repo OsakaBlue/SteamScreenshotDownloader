@@ -2,6 +2,9 @@ import tkinter as tk
 from tkinter import messagebox
 import os
 
+print("Creating venv and getting python libraries... Wait...")
+print("\n")
+
 # Виконуємо команди для створення віртуального середовища та встановлення необхідних пакетів
 os.system("py -m venv .venv")
 os.system(".venv\Scripts\activate")
@@ -23,10 +26,15 @@ def download_page():
     chrome_options.add_argument("--disable-gpu")
     driver = webdriver.Chrome(options=chrome_options)
     
+    #повідомлення
+    print("Loading page and scraping HTML... It will take quite some time, if you have a lot of screenshots there...")
+    print("Be patient. It is doing it.")
+
     try:
         # Відкриваємо веб-сторінку
         driver.get(url)
-        
+
+                
         # Отримуємо висоту сторінки
         last_height = driver.execute_script("return document.body.scrollHeight")
         

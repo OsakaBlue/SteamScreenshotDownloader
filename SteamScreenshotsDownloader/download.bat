@@ -17,7 +17,7 @@ python scripts\SaveIMGs.py
 
 echo Screenshots saved in Screenshots folder
 
-echo Deleting contents of temp folder...
+echo Removing temporary files...
 del /q /s scripts\temp\*.*
 
 pause

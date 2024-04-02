@@ -34,15 +34,16 @@ with open("scripts/temp/urls.txt", "r") as file:
             if game_name_element:
                 game_name = game_name_element.text.strip()
             else:
-                print(f"На сторінці {url} не вдалося знайти назву гри")
+                print(f"Could not find game's name on {url} page... Skipping")
                 continue
 
         actual_media = soup.find("div", class_="actualmediactn")
         if actual_media:
             screenshot_url = actual_media.find("a")["href"]
             save_screenshot_url(screenshot_url, game_name)
-            print(f"Посилання на скріншот зі сторінки {url} збережено у файлі {game_name}.txt")
+            print(f"Screenshot link from {url} page saved in {game_name}.txt")
         else:
-            print(f"На сторінці {url} не вдалося знайти посилання на скріншот")
+            print(f"Could not find screenshot link on {url} page... Skipping")
 
-print("Виконання завершено")
+print("Screenshots link list created successfully. Proceeding...")
+print("\n")

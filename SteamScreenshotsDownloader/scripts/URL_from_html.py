@@ -11,17 +11,17 @@ def get_links_from_html(html_file):
 
     links = []
     divs = soup.find_all('div', class_='imgWallHover')
-    print(f"Знайдено {len(divs)} елементів з класом 'imgWallHover'.")
+    print(f"Found {len(divs)} elements with class 'imgWallHover'.")
 
     for div in divs:
         img_id = div.get('id')
         if img_id and img_id.startswith('imgWallHover'):
             img_id = img_id.replace('imgWallHover', '')
-            print(f"Отримано ідентифікатор з елемента 'imgWallHover': {img_id}")
+            print(f"ID of element 'imgWallHover' received: {img_id}")
             link = f"https://steamcommunity.com/sharedfiles/filedetails/?id={img_id}"
             links.append(link)
         else:
-            print("Не вдалося знайти ідентифікатор для елемента 'imgWallHover'.")
+            print("Couldn't fine 'imgWallHover' element ID.")
 
     return links
 
@@ -41,8 +41,11 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 links = get_links_from_html(html_file)
-print(f"Отримано {len(links)} посилань.")
+print(f"Got {len(links)} screenshots IDs.")
+print("\n")
+
 
 write_links_to_file(links, output_file)
 
-print(f"Посилання було збережено у файлі {output_file}.")
+print(f"Link saved in {output_file}.")
+

@@ -16,9 +16,9 @@ def download_image(url, folder_name):
             image_name = str(uuid.uuid4()) + '.jpg'
         with open(os.path.join(folder_name, image_name), 'wb') as f:
             f.write(response.content)
-            print(f"Зображення завантажено: {image_name}")
+            print(f"Screenshot downloaded: {image_name}")
     else:
-        print(f"Не вдалося завантажити зображення з {url}")
+        print(f"Could not save screenshot from {url}")
 
 def process_txt_file(file_path):
     folder_name = os.path.join("Screenshots", os.path.splitext(os.path.basename(file_path))[0])
@@ -33,8 +33,11 @@ if __name__ == "__main__":
     txt_files = [os.path.join("scripts", "temp", "URLS", file) for file in os.listdir(os.path.join("scripts", "temp", "URLS")) if file.endswith('.txt')]
     
     if not txt_files:
-        print("В папці scripts\\temp\\URLS не знайдено файли TXT.")
+        print("Could not find TXT files (links) in scripts\\temp\\URLS ")
     else:
         for txt_file in txt_files:
-            print(f"Обробка {txt_file}...")
+            print(f"Processing {txt_file}...")
             process_txt_file(txt_file)
+
+
+print("\n")
